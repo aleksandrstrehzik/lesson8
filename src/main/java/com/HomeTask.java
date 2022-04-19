@@ -12,6 +12,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @SuperBuilder
 @Table
+@PrimaryKeyJoinColumn(name = "id")
 public class HomeTask extends Task {
 
     @Column
