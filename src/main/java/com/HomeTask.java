@@ -1,6 +1,7 @@
 package com;
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -9,7 +10,9 @@ import java.time.LocalDate;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@SuperBuilder
+@Table
+@PrimaryKeyJoinColumn(name = "id")
 public class HomeTask extends Task {
 
     @Column
