@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@Table
+@DiscriminatorValue("H")
 public class HomeTask extends Task {
 
     @Column

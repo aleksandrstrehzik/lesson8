@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@Table
+@DiscriminatorValue("W")
 public class WorkTask extends Task {
 
     private Integer cost;
